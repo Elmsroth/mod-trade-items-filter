@@ -17,13 +17,12 @@
 #
 #    ModTradeItemsFilter.GameMasters.MinAccountSecurityLevelToByPassForbiddenItems
 #        Description: Minimum account security level required to bypass the forbidden items IDs when trading
-#					  GM must have ".gm on" even if they meet the minimum account security level
 #					  
 #        Default:     3 - Administrator level
 #
 
 ModTradeItemsFilter.Common.ModuleEnabled = 1
 
-ModTradeItemsFilter.Common.ForbiddenItemsIDs = "2586,11508,38513"
+ModTradeItemsFilter.Common.ForbiddenItemsIDs = ""
 
 ModTradeItemsFilter.GameMasters.MinAccountSecurityLevelToByPassForbiddenItems = 3
