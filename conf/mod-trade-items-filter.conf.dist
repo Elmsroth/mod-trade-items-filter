@@ -1,0 +1,29 @@
+#
+# Copyright (C) 2016+ AzerothCore <www.azerothcore.org>, released under GNU AGPL v3 license: https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE-AGPL3
+# Original Author : Elmsroth<elmsroth@eskwad.net>
+
+[worldserver]
+
+##########################################
+# Module Trade Items Filter configuration
+##########################################
+#
+#    ModTradeItemsFilter.Common.ForbiddenItemsIDs
+#        Description: Comma separated list of item IDs
+#					  The items in this list will not be able to be traded between every player
+#
+#        Default:     "" - No items
+#                     "12064,17" - Comma separated list of items IDs
+#
+#    ModTradeItemsFilter.GameMasters.MinAccountSecurityLevelToByPassForbiddenItems
+#        Description: Minimum account security level required to bypass the forbidden items IDs when trading
+#					  GM must have ".gm on" even if they meet the minimum account security level
+#					  
+#        Default:     3 - Administrator level
+#
+
+ModTradeItemsFilter.Common.ModuleEnabled = 1
+
+ModTradeItemsFilter.Common.ForbiddenItemsIDs = "2586,11508,38513"
+
+ModTradeItemsFilter.GameMasters.MinAccountSecurityLevelToByPassForbiddenItems = 3
