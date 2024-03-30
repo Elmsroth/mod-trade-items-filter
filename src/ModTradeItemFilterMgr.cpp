@@ -18,7 +18,7 @@ void ModTradeItemsFilterMgr::Initialize()
 
     LOG_INFO("server.loading", "Load module config 'mod-trade-items-filter'...");
     // Load the config from config file
- 
+
     // Determine wether the ùmodule is active or not
     m_moduleEnabled = sConfigMgr->GetOption<bool>("ModTradeItemsFilter.Common.ModuleEnabled", true);
     LOG_INFO("server.loading", ">> Module enabled : {}", m_moduleEnabled);
@@ -71,7 +71,6 @@ std::string GetLocalizedItemName(Item* item, int loc_idx)
         uint32 itemId = item->GetEntry();
         ItemTemplate const* pProto = sObjectMgr->GetItemTemplate(itemId);
         std::string itemNameLocalized = pProto->Name1; // Default english name
-        const ItemLocale* itemLocale = sObjectMgr->GetItemLocale(itemId);
         if (loc_idx >= 0)
         {
             if (ItemLocale const* il = sObjectMgr->GetItemLocale(pProto->ItemId))
