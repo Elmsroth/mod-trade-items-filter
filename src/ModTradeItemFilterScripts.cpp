@@ -8,7 +8,6 @@
 #include "Chat.h"
 #include "ModTradeItemFilterMgr.h"
 
-
 // World script to handle singleton initialization
 class ModTradeItemsFilterWorldScript : public WorldScript
 {
